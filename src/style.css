@@ -1,0 +1,100 @@
+h1 {
+  text-align: center;
+  color: mediumseagreen;  
+}
+
+button{
+
+  font-size: 18;
+  background-color: gray;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+}
+
+.complete {
+
+  font-size: 18;
+  background-color: gainsboro;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+
+}
+
+form{
+
+  /*display: flex;*/
+
+}
+
+input {
+
+    font-size: 20px;
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin-right: 16px;
+    border-style: solid;
+
+}
+
+
+.list-style{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.button-style{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  position: relative;
+  
+}
+
+.todo-style{
+  font-size: 24px;
+  display: flex;
+  align-items:center;
+  width: auto;
+  flex-grow: 1;
+
+}
+
+button, input, textarea {
+
+  font-family: inherit;
+  font-size: 100%;
+
+}
+
+label {
+  color: mediumseagreen; 
+  font-weight: bold;
+  display: block;
+  width: 150px;
+  float: left;
+  }
+
+  textarea{
+    
+    font-size: 20px;
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin-right: 16px;
+    border-style: solid;
+
+  }
+
+  #list-line{
+
+    width:150%;
+    margin-left:auto;
+    margin-right:auto
+
+
+  }
+  .list-style{
+
+  }
