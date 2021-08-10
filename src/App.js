@@ -36,30 +36,16 @@ const App = () =>{
   
   }
 
-  /*function completeTodo(id){
-
-    let updatedList = [...itemList].map((item) => {
-      if(item.id == id){
-        item.complete = !item.complete
-      }
-
-      return item
-    })
-    
-    setList(updatedList)
-    console.log(todoList);
-  }*/
 
   return (
     <div>
-      <h1>Add New Item</h1>
-
-      
      
       <form onSubmit ={onSubmitHandler}>
+      <fieldset>
 
+        <legend><h1>Add Items</h1> </legend>
         <label for="name">Name</label> <br/>
-        <input type="text" value ={item}
+        <input class="itemInput" type="text" value ={item}
           onChange = {(e) => setItem(e.target.value)}
           required placeholder="Name"/>
           <br/>
@@ -73,32 +59,35 @@ const App = () =>{
           onChange = {(e) => setQuan(e.target.value)}
           required placeholder = '0' />
 
-
-          <br/>
-
-        
+      
       <button>Add</button>
-   
+      </fieldset>
       </form>
 
+      <br/>
+
     {itemList.map((data) =>(
-    <div key={data.id} className="list-style">
-      <h2>Shopping List</h2>
+    <div key={data.id} class="list-style">
+      
         <div className="button-style">
-        
+        <fieldset>
+          <legend><h1>Shopping List</h1></legend>
         {data.itemName}
         <br/>
         {data.descDet}
         <br/>
         {data.quanName}
         <br/>
+
+        
         <div className="item-style">
           
           </div>
         <button onClick={() => deleteItem(data.id)}>Delete</button>
-       
+        </fieldset>
+        <button class ="cancel">Cancel</button>
         </div>
-
+        
 </div> ))}
    
     </div>
