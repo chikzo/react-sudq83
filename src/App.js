@@ -8,7 +8,7 @@ const App = () => {
     quantity: ''
   });
   const [itemList, setItemList] = React.useState([]);
-  const [formKey, setFormkey] = React.useState([10])
+  const [formKey, setFormkey] = React.useState([10]);
 
   function onSubmitHandler(e) {
     e.preventDefault();
@@ -23,7 +23,7 @@ const App = () => {
     };
 
     setItemList([...itemList].concat(addItemDetails));
-    setItem('');
+    setItem('')
     console.log(itemList);
     setFormkey(formKey+1);
   }
